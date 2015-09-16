@@ -1,5 +1,8 @@
 # gulp-angular2
 
-gulp init - install and serve project when everything is done
+To install dependencies please run:
+    npm install
+    gulp init
 
-gulp serve - serve project
+To serve project please run:
+gulp serve

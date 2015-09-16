@@ -12,7 +12,7 @@ class MyAppComponent {
     name:String;
 
     constructor() {
-        this.name = 'World';
+        this.name = 'Kokice';
     }
 }
 

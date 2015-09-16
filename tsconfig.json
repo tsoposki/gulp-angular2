@@ -14,10 +14,5 @@
     "./typings/rx/rx-lite.d.ts",
     "./typings/rx/rx.d.ts",
     "./app/modules/app.ts"
-  ],
-  "filesGlob": [
-    "!./node_modules/**/*.ts",
-    "./app/lib/*.ts",
-    "./app/**/*.ts"
   ]
 }

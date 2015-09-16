@@ -5,6 +5,7 @@ const styles = require('./gulp/styles');
 
 var gulp = require('gulp');
 var shell = require('gulp-shell');
+var runSequence = require('run-sequence');
 
 gulp.task('libs', function () {
     var size = require('gulp-size');
@@ -15,14 +16,14 @@ gulp.task('libs', function () {
 
 gulp.task('install', shell.task([
     'npm install -g typescript tsd',
-    'npm install',
     'tsd install angular2 es6-promise rx rx-lite'
 ]));
 
 gulp.task('init', function () {
     runSequence(
         'install',
-        'libs',
-        'serve'
+        'libs'
     );
 });
+
+gulp.task('default', ['serve']);
